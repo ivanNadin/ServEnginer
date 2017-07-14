@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="myPane" hgap="10" prefHeight="500.0" styleClass="background" stylesheets="@../style/style.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateNewSheetController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="150.0" minHeight="38.0" percentHeight="0.0" prefHeight="42.0" />
+      <RowConstraints maxHeight="60.0" minHeight="0.0" percentHeight="0.0" prefHeight="60.0" />
+      <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+    <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowSpan="2">
+      <children>
+         <Button fx:id="createNewSheet" contentDisplay="CENTER" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#onClickCreatNS" prefHeight="39.0" prefWidth="135.0" text="Add new sheet" />
+         <ComboBox fx:id="cbClientName" editable="true" layoutX="295.0" layoutY="21.0" prefHeight="39.0" prefWidth="279.0" promptText="Название" styleClass="combo-box-base" />
+         <Button fx:id="sShot" layoutX="167.0" layoutY="21.0" mnemonicParsing="false" onAction="#onSnapSot" prefHeight="39.0" prefWidth="106.0" text="Сохранить" />
+      </children>
+      <opaqueInsets>
+         <Insets left="20.0" right="20.0" top="10.0" />
+      </opaqueInsets>
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin></AnchorPane>
+   <Button id="backButton" fx:id="backButton" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#backPage" prefHeight="30.0" prefWidth="30.0" stylesheets="@../style/style.css">
+      <GridPane.margin>
+         <Insets left="10.0" />
+      </GridPane.margin></Button>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>
